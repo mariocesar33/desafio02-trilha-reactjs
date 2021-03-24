@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { MovieContext } from './MovieContext';
+import { MoviesContext } from './MoviesContext';
 
 import { Button } from './components/Button';
 import { MovieCard } from './components/MovieCard';
@@ -61,7 +61,7 @@ export function App() {
   }
 
   return (
-    <MovieContext.Provider value={[]}>
+    <MoviesContext.Provider value={[]}>
       <div style={{ display: 'flex', flexDirection: 'row' }}>
         <nav className="sidebar">
           <span>Watch<p>Me</p></span>
@@ -94,6 +94,6 @@ export function App() {
           </main>
         </div>
       </div>
-    </MovieContext.Provider>
+    </MoviesContext.Provider>
   )
 }
